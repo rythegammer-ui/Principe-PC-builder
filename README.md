@@ -17,7 +17,7 @@ Paste the texts between you and the customer. The reader pulls out budget, games
 
 The prompt keeps their wording, refuses invented preferences, and asks for a parts list, a compatibility pass, and bench notes. Put the thread on the bench when the job is real.
 
-## Run it
+## Run it in a browser
 
 ```bash
 npm install
@@ -26,3 +26,14 @@ npm run dev
 ```
 
 Open the local URL Vite prints. `npm run build` writes a static site to `dist/`.
+
+## Install it on Mac or Windows
+
+`Principe-Computers-Mac-and-Windows.zip` contains both installers:
+
+- `Principe-Computers-Windows-Setup.exe` installs the app, adds a desktop shortcut, and does not need administrator rights.
+- `Principe-Computers-macOS.zip` is the app for Apple Silicon and Intel. Unzip it and drag Principe Computers into Applications.
+
+The first time you open the downloaded app, Windows SmartScreen or macOS Gatekeeper will warn you because the app is not signed with a paid certificate. Windows: choose More info, then Run anyway. Mac: right-click the app, choose Open, then Open again. The steps are also in `INSTALL.txt` inside the zip.
+
+Your builds stay on that computer. Rebuild the zip with `npm run desktop`. That needs NSIS, ImageMagick, librsvg, and icnsutils.
